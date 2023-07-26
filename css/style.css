@@ -555,6 +555,10 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--cornflower-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-btn:hover,
@@ -595,9 +599,10 @@ img {
 }
 .projects-menu-item {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-block-list {
   display: flex;
@@ -607,7 +612,7 @@ img {
 }
 .projects-block-item {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .project-block-container {
   padding: 32px 16px;
@@ -641,4 +646,8 @@ img {
   width: 100%;
   transform: translateY(100%);
   transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-block-link:hover .overlay-box-text,
+.projects-block-link:focus .overlay-box-text {
+  transform: translateY(0%);
 }
